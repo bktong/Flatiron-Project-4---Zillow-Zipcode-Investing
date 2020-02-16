@@ -1,25 +1,8 @@
 
 # Module 4 -  Final Project Specifications
 
-## Introduction
 
-In this lesson, we'll review all the guidelines and specifications for the final project for Module 4.
-
-## Objectives
-
-* Understand all required aspects of the Final Project for Module 4
-* Understand all required deliverables
-* Understand what constitutes a successful project
-
-### Final Project Summary
-
-Another module down--you're absolutely crushing it! For this project, you'll get to flex your **_Time-Series_** muscles!
-
-<img src='https://raw.githubusercontent.com/learn-co-curriculum/dsc-mod-4-project/master/images/timegif.gif'>
-
-For this module's final project, we're going to put your newfound **_Time Series Analysis_** skills to the test. You will be forecasting real estate prices of various zipcodes using data from [Zillow](https://www.zillow.com/research/data/). However, this won't be as straightforward as just running a time-series analysis--you're going to have to make some data-driven decisions and think critically along the way!
-
-### The Project
+### The Project Objective
 
 For this project, you will be acting as a consultant for a fictional real-estate investment firm. The firm has asked you what seems like a simple question:
 
@@ -29,72 +12,54 @@ This may seem like a simple question at first glance, but there's more than a li
 
 As mentioned previously, the data you'll be working with comes from the [Zillow Research Page](https://www.zillow.com/research/data/). However, there are many options on that page, and making sure you have exactly what you need can be a bit confusing. For simplicity's sake, we have already provided the dataset for you in this repo--you will find it in the file `zillow_data.csv`.
 
-## The Deliverables
+### Project Overview
+The project goal is to explore time series modeling and forecasting.  We are wrapping it around a fictional exercise of being a consultant to a client looking to invest.
+As we have been given a lot of freedom to define and shape our use-case I have selected the following scenario for this project.
 
-The goal of this project is to have you complete a very common real-world task in regard to Time-Series Modeling. However, real world problems often come with a significant degree of ambiguity, which requires you to use your knowledge of statistics and data science to think critically about and answer. While the main task in this project is Time-Series Modeling, that isn't the overall goal--it is important to understand that Time-Series Modeling is a tool in your toolbox, and the forecasts it provides you are what you'll use to answer important questions.
+### Files Included
 
-In short, to pass this project, demonstrating the quality and thoughtfulness of your overall recommendation is at least as important as successfully building a Time-Series model!
-
-Online students should complete the following 4 deliverables for this project:
-
-* A well-documented **_Jupyter Notebook_** containing any code you've written for this project (use the notebook in this repo, `mod_4_starter_notebook.ipynb`). This work will need to be pushed to your GitHub repository in order to submit your project.
-* An organized **README.md** file in the GitHub repository that describes the contents of the repository. This file should be the source of information for navigating through the repository.
-* A **_[Blog post](https://github.com/learn-co-curriculum/dsc-welcome-blogging)_**.
-* An **_'Executive Summary' PowerPoint Presentation_** that explains your rationale and methodology for determining the best zipcodes for investment.
-
-Note: On-campus students may have different deliverables, please speak with your instructor.
-
-### Jupyter Notebook Must-Haves
-
-For this project, you will be provided with a jupyter notebook containing some starter code. If you inspect the zillow dataset file, you'll notice that the datetimes for each sale are the actual column names--this is a format you probably haven't seen before. To ensure that you're not blocked by preprocessing, we've provided some helper functions to help simplify getting the data into the correct format. You're not required to use this notebook or keep it in its current format, but we strongly recommend you consider making use of the helper functions so you can spend your time working on the parts of the project that matter.
-
-#### Organization/Code Cleanliness
-
-The notebook should be well organized, easy to follow, and code is modularized and commented where appropriate.
-
-* Level Up: The notebook contains well-formatted, professional looking markdown cells explaining any substantial code. All functions have docstrings that act as professional-quality documentation.
-* The notebook is written to technical audiences with a way to both understand your approach and reproduce your results. The target audience for this deliverable is other data scientists looking to validate your findings.
-* Data visualizations you create should be clearly labeled and contextualized--that is, they fit with the surrounding code or problems you're trying to solve. No dropping data visualizations randomly around your notebook without any context!
-
-#### Findings
-
-Your notebook should briefly mention the metrics you have defined as "best", so that any readers understand what technical metrics you are trying to optimize for (for instance, risk vs profitability, ROI yield, etc.). You do **not** need to explain or defend your your choices in the notebook--the blog post and executive summary presentation are both better suited to that sort of content. However, the notebook should provide enough context about your definition for "best investment" so that they understand what the code you are writing is trying to solve.
-
-#### Visualizations
-
-Time-Series Analysis is an area of data science that lends itself well to intuitive data visualizations. Whereas we may not be able to visualize the best choice in a classification or clustering problem with a high-dimensional dataset, that isn't an issue with Time Series data. As such, **_any findings worth mentioning in this problem are probably also worth visualizing_**. Your notebook should make use of data visualizations as appropriate to make your findings obvious to any readers.
-
-Also, remember that if a visualization is worth creating, then it's also worth taking the extra few minutes to make sure that it is easily understandable and well-formatted. When creating visualizations, make sure that they have:
-
-* A title
-* Clearly labeled X and Y axes, with appropriate scale for each
-* A legend, when necessary
-* No overlapping text that makes it hard to read
-* An intelligent use of color--multiple lines should have different colors and/or symbols to make them easily differentiable to the eye
-* An appropriate amount of information--avoid creating graphs that are "too busy"--for instance, don't create a line graph with 25 different lines on it
-
-<center><img src='images/bad-graph-1.png' height=100% width=100%>
-There's just too much going on in this graph for it to be readable--don't make the same mistake! (<a href='http://genywealth.com/wp-content/uploads/2010/03/line-graph.php_.png'>Source</a>)</center>
-
-### Blog Post Must-Haves
-
-Refer back to the [Blogging Guidelines](https://github.com/learn-co-curriculum/dsc-welcome-blogging) for the technical requirements and blog ideas.
+Readme.md                   - this file
+LICENSE.md                  - License
+zillow_data.csv             - csv with our zillow zipcode data
+Mod 4 Project.ipynb         - Jupyter Notebook of our project code
+/zillow/zip_MedianRental*   - rental data from zillow's research page.
 
 
-### Executive Summary Must-Haves
+# Project Summary:
+# The Client:   Boutique REIT seeking to invest $1.5-2 mil.
+The client is a small partnership-based real estate investment trust with $1.5 to $2 Million on hand that would like to create an exciting portfolio with the goal of attracting additional investors.   They have asked us to help them pare down there initial search.   They are not tied to any area specifically and plan to set up operations in a metro area that makes sense.   
 
-Your presentation should:
+The client's portfolio strategy is to invest in single-family homes and turn those into rental properties.  They are seeking top level guidance using a disciplined data-driven approach to starting their rental portfolio.
 
-Contain between 5-10 professional quality slides detailing:
+# Key Metric:
+Return on Investment: We don't have much in terms of cost data to work with so a true ROI calculation doesn't pertain.  We are however, using a proxy calculation for ROI to so we can compare our zip codes on an apples to apples basis.    We will be using the calculation of annual rent collected as a percentage of home price.   The higher the percentage the better for our portfolio.
 
-* A high-level overview of your methodology and findings, including the 5 zipcodes you recommend investing in
-* A brief explanation of what metrics you defined as "best" in order complete this project
+# Summary:
+Zip codes are just a starting point for our firm.   There are plenty of attractive options when we are looking at investment properties as rental units.  With 20+ zipcodes in Houston offering double digit returns.   We provide our client with the following zipcodes as our Top 5, but would have encouraged them to look a properties in almost all of our top 20.
 
-As always, this prresentation should also:
+Our Top 5
+77073
+77338
+77396
+77373
+77083
 
-* Take no more than 5 minutes to present
-* Avoid technical jargon and explain results in a clear, actionable way for non-technical audiences.
+### Process and Design
 
-## Grading Rubric 
+This was a very open ended project.  We had to decide on a story to follow and see the analysis through in a way that made sense to our "client."   In the end I tried to show how the design of our question played a major role in how sought the answer it.
 
-Online students can find a PDF of the grading rubric for the project [here](https://github.com/learn-co-curriculum/dsc-mod-4-project/blob/master/module4_project_rubric.pdf). _Note: On-campus students may have different requirements, please speak with your instructor._
+Process:
+
+We needed to take a look at the data and understand what kind of question could we answer with it that actually made any sense.   Investment is such a vague term here, but investing in one zip code over another makes zero sense because real estate is about investing in assets not zip codes.
+
+ultimately we decided we needed additional outside data to peg our analysis on, so we we went back to the original source (zillow) to see what they had.   Rental data came up and it was conveniently formatted in a similar manner to the data we were provided.    
+
+Filtering out our data:   It made sense as a preprocessing move to figure out a good way to filter out most of our data.  I used the story of seeking a center of operations to invest in nearby zipcodes, but it could have been as simple as picking a city like Chicago.  We were able to calculate our ROI to drive our decision making to further analyze Houston zip codes.
+
+Forecasting:  We ended up using a SARIMAX model for our time series because our data was very much seasonal.   We learned how to apply different pdq combinations and seek out the optimal one to tell our stories.  In the end we were able to select 5 for further exploration, but obviously did not have the data to drive anything truly resembling an investment decision.
+
+### Findings
+time series modeling makes sense on paper, but requires many tiny steps with lots of variables to keep track of.   I really needed to sit down and organize my thoughts about what exactly was needed and how I was going to be able to access that data at the time.    It is definitely worth our time to work alongside in a notebook / or with MANY comments to keep track of where you in case life circumstances breaks your concentration.
+
+
+End of Mod 4 project
